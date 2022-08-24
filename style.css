@@ -1,93 +1,76 @@
-html{
-    font-size: 10px;
-}
-main{
-    background: #eee;
-    margin: 30px 8px;
-    border-radius: 5px;
-    padding: 15px;
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    color: #fff;
 }
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    background: url(IMG/background.jpg) repeat center center fixed ;
+    background-size: cover;
+}
+main {
+    position: relative;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+header{
+    margin-top:  1em;
     text-align: center;
-    color: #333;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
-h1{
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+header img{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: rgb(28 32 93 / 24%) 0px 2px 12px 0px;
+}
+header h1{
+    display: inline-block;
+    font-size: 0.8em ;
     font-weight: bold;
+    border-radius: 1em;
+    background-color: #000a;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border: 1px solid #fffa;
 }
-p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-figure{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-}
-#img-div{
-    background: white;
-    padding: 10px;
-    margin: 0;
-}
-img{
-    display: block;
-    max-width: 100%;
+ul {
+    box-sizing: border-box;
+    list-style: none;
     margin: 0 auto;
-    height: auto;
+    padding: 2em;
+    max-width: 480px;
 }
-figcaption{
-    display: block;
+ul li{
+     background-color: #fffa;
+     border-radius: 10em;
+     padding: 1em;
+     margin: 1.4em 0;
+     box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+     backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+     -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
 }
-#img-caption{
-    margin: 15px 0 5px 0;
-}
-section{
-    display: block;
-}
-#headline{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 1.17em;
-    font-weight: bold;
-    margin: 50px 0;
-}
-ul{
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    line-height: 1.6;
-    text-align: left;
-}
-li{
-    
-    margin: 16px 0;
-    display: list-item;
-    
-}
-blockquote{
-    max-width: 545px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    font-style: italic;
-}
-cite{
-    font-style: italic;
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
 }
 a{
-    color: darkgray;
+    color: black;
+    text-decoration: none;
+}
+#vanta{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
